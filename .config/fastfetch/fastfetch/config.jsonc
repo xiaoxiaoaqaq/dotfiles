@@ -1,0 +1,172 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "builtin",
+    "source": "small",
+    "padding": {
+      "top": 1,
+      "right": 4
+    }
+  },
+
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "36",
+      "title": "36",
+      "output": "default",
+      "separator": "90"
+    },
+    "key": {
+      "width": 12,
+      "type": "string"
+    },
+    "size": {
+      "binaryPrefix": "iec",
+      "ndigits": 1
+    },
+    "freq": {
+      "ndigits": 2
+    },
+    "temp": {
+      "ndigits": 0
+    },
+    "percent": {
+      "type": ["bar", "num-color"],
+      "ndigits": 0
+    },
+    "bar": {
+      "char": {
+        "elapsed": "━",
+        "total": "─"
+      },
+      "border": {
+        "left": "",
+        "right": ""
+      },
+      "color": {
+        "elapsed": "36",
+        "total": "90"
+      },
+      "width": 12
+    }
+  },
+
+  "general": {
+    "thread": true,
+    "detectVersion": true,
+    "processingTimeout": 1000
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "format": "{#36}{user-name}{#90}@{#36}{host-name}{#}"
+    },
+    {
+      "type": "separator",
+      "string": "─"
+    },
+    {
+      "type": "os",
+      "key": "󰣇 OS"
+    },
+    {
+      "type": "host",
+      "key": "󰌢 Laptop"
+    },
+    {
+      "type": "kernel",
+      "key": "󰌽 Kernel",
+      "format": "{release}"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 Packages",
+      "combined": true
+    },
+    {
+      "type": "uptime",
+      "key": "󰅐 Uptime"
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "󰧨 WM",
+      "detectPlugin": true
+    },
+    {
+      "type": "shell",
+      "key": "󰞷 Shell"
+    },
+    {
+      "type": "terminal",
+      "key": "󰆍 Terminal"
+    },
+    {
+      "type": "terminalfont",
+      "key": "󰛖 Font"
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "󰻠 CPU",
+      "showPeCoreCount": false
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": "󱈏 Memory"
+    },
+    {
+      "type": "command",
+      "key": "󰾆 ZRAM",
+      "text": "~/.config/fastfetch/ff-zram.sh"
+    },
+//    {
+//      "type": "command",
+//      "key": "󰓡 Swap",
+//      "text": "~/.config/fastfetch/ff-swap.sh"
+//    },
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "folders": "/",
+      "useAvailable": false
+    },
+    "break",
+    {
+      "type": "localip",
+      "key": "󰩟 IPv4",
+      "showIpv4": true,
+      "showIpv6": false,
+      "showMac": false,
+      "showPrefixLen": true,
+      "defaultRouteOnly": true
+    },
+    {
+      "type": "battery",
+      "key": "󰁹 Battery"
+    },
+    {
+      "type": "datetime",
+      "key": "󰃭 Date",
+      "format": "{year}-{month-pretty}-{day-pretty}  {hour-pretty}:{minute-pretty}"
+    },
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle",
+      "block": {
+        "width": 3,
+        "range": [0, 15]
+      }
+    }
+  ]
+}
