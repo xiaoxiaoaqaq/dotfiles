@@ -1,0 +1,8 @@
+[catalog.karere]
+name = "Karere"
+category = "chat"
+
+[templates.karere]
+input_path = "karere.css"
+output_path = "$XDG_CONFIG_HOME/io.github.tobagin.karere/user.css"
+requires_path = "/usr/bin/karere"

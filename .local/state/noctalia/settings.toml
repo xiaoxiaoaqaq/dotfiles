@@ -1,0 +1,173 @@
+config_version = 20
+
+[backdrop]
+enabled = true
+tint_intensity = 0.0
+
+[bar.default]
+background_opacity = 0.099999997764825821
+capsule = true
+center = [ "group:g3" ]
+concave_edge_corners = false
+end = [ "group:g1", "media", "tray", "notifications", "clipboard", "bluetooth", "group:g2", "battery", "session" ]
+layer = "overlay"
+margin_ends = 0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
+    enabled = true
+    fill = "surface_container"
+    id = "g1"
+    members = [ "cpu", "network_rx", "network_tx" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
+    enabled = true
+    fill = "surface_container"
+    id = "g2"
+    members = [ "volume", "brightness" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
+    enabled = true
+    fill = "surface_container"
+    id = "g3"
+    members = [ "clock", "weather" ]
+    opacity = 1.0
+    padding = 6.0
+
+[brightness]
+enable_ddcutil = true
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 208.0
+    box_width = 288.0
+    cx = 1664.0
+    cy = 172.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 201.48046875
+    box_width = 287.8046875
+    cx = 1664.09765625
+    cy = 407.259765625
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+[dock]
+background_opacity = 0.99999997764825821
+compositor_blur = false
+
+[location]
+address = "潮州, 中国"
+
+[lockscreen]
+fingerprint = false
+grace_period_seconds = 5
+monitors = [ "HDMI-A-1" ]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_media_controls = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[shell]
+panel_anchor_bar = "default"
+settings_window_translucent = true
+
+    [shell.launcher]
+    default_view = "pinned"
+    layout = "simple"
+
+    [shell.panel]
+    clipboard_position = "auto"
+    control_center_placement = "floating"
+    launcher_position = "auto"
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_launcher = true
+    open_near_click_session = true
+    transparency_mode = "glass"
+    wallpaper_placement = "floating"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 1
+
+[theme]
+builtin = "Gruvbox"
+mode = "auto"
+source = "wallpaper"
+wallpaper_scheme = "m3-tonal-spot"
+
+[wallpaper.default]
+path = "/home/xxw/Pictures/Wallpapers/ys-ganyu.jpg"
+
+[wallpaper.last]
+path = "/home/xxw/Pictures/Wallpapers/ys-ganyu.jpg"
+
+[wallpaper.monitors.HDMI-A-1]
+path = "/home/xxw/Pictures/Wallpapers/ys-ganyu.jpg"
+
+[widget.clock]
+format = "{:%H:%M:%S}"

@@ -1,0 +1,5 @@
+mkdir -p ".config" ".local/state"
+cp -r "/home/xxw/.config/kitty" "./.config/kitty"
+cp -r "/home/xxw/.config/niri" "./.config/niri"
+cp -r "/home/xxw/.config/fastfetch" "./.config/fastfetch"
+cp -r "/home/xxw/.local/state/noctalia" "./.local/state/noctalia"
