@@ -178,6 +178,7 @@ settings_window_translucent = true
 
 [theme]
 builtin = "Gruvbox"
+community_palette = "Oxocarbon"
 mode = "light"
 shell_mode = "light"
 source = "wallpaper"
