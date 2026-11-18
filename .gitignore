@@ -1,0 +1,7 @@
+# 下载的插件源仓库（内部是独立的 git 仓库，不应作为 submodule 提交）
+noctalia/.local/state/noctalia/plugins/sources/*/repo/
+
+# 临时文件
+*.swp
+*~
+.DS_Store

@@ -1,0 +1,8 @@
+{
+  "Applications": [
+    "/var/lib/flatpak/exports/share/applications/com.tencent.WeChat.desktop",
+    "/usr/share/applications/wechat.desktop",
+    "/usr/share/applications/qq.desktop",
+    "/usr/share/applications/netease-cloud-music-web-player.desktop"
+  ]
+}
